@@ -69,5 +69,10 @@ namespace EntityDesktopProject
             db.SaveChanges();
             MessageBox.Show("ürün güncellendi");
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            txtAdı.Text = cmbKategorı.SelectedValue.ToString();
+        }
     }
 }
