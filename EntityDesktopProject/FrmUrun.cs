@@ -34,7 +34,17 @@ namespace EntityDesktopProject
         }
         private void Listele_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = db.TBLURUN.ToList();
+            dataGridView1.DataSource = (from x in db.TBLURUN
+                                        select new
+                                        {
+                                            x.URUNID,
+                                            x.URUNAD,
+                                            x.MARKA,
+                                            x.STOK,
+                                            x.FİYAT,
+                                            x.TBLKATEGORI.AD,
+                                            x.DURUM
+                                        }).ToList();
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -42,7 +52,7 @@ namespace EntityDesktopProject
             t.URUNAD = txtAdı.Text;
             t.MARKA = txtMarka.Text;
             t.STOK = short.Parse(txtStok.Text);
-            t.KATEGORI = int.Parse(cmbKategorı.Text);
+            t.KATEGORI = int.Parse(cmbKategorı.SelectedValue.ToString());
             t.FİYAT = decimal.Parse(txtFiyat.Text);
             t.DURUM = true;
             db.TBLURUN.Add(t);

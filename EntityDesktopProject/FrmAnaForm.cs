@@ -28,5 +28,11 @@ namespace EntityDesktopProject
             FrmUrun fr = new FrmUrun();
             fr.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Frmİstatistik fr = new Frmİstatistik();
+            fr.Show();
+        }
     }
 }
