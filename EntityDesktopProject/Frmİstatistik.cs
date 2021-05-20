@@ -32,10 +32,12 @@ namespace EntityDesktopProject
             //label22.Text = db.TBLURUN.Sum(z => z.FİYAT).ToString() + "TL";
             label18.Text = (from x in db.TBLURUN orderby x.FİYAT descending select x.URUNAD).FirstOrDefault();
             label9.Text =  (from x in db.TBLURUN orderby x.FİYAT ascending select x.URUNAD).FirstOrDefault();
+            label20.Text = db.TBLURUN.Count(x => x.KATEGORI == 1).ToString();
             label21.Text = db.TBLURUN.Count(x => x.KATEGORI == 1).ToString();
-            label21.Text = db.TBLURUN.Count(x => x.KATEGORI == 1).ToString();
-            label21.Text = db.TBLURUN.Count(x => x.URUNAD == "BUZDOLABI").ToString();
+            label22.Text = db.TBLURUN.Count(x => x.URUNAD == "BUZDOLABI").ToString();
             label23.Text = (from x in db.TBLMUSTERI select x.SEHIR).Distinct().Count().ToString();
+            label24.Text = db.MARKAGETIR().FirstOrDefault();
+
         }
     }
 }
