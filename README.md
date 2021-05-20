@@ -1,6 +1,8 @@
 # Entity Desktop Project
 ## Regulate products
 
+![image](https://user-images.githubusercontent.com/32723458/118972652-7466af00-b979-11eb-8369-bc0941a035c9.png)
+
 
 Entity desktop project is a manager that provide to regulate your products stuffs,
 powered by .net.
@@ -13,6 +15,7 @@ powered by .net.
 - Enable to categorize your stuff
 - Export documents as 
 
+![image](https://user-images.githubusercontent.com/32723458/118972537-5305c300-b979-11eb-9c5b-c64928259623.png)
 
 ## Tech
 
@@ -20,6 +23,10 @@ Entitydesktopproject uses a number of open source projects to work properly:
 
 - [Sql] - Used for database
 - [C#] - Used for backend
+
+![image](https://user-images.githubusercontent.com/32723458/118972721-89dbd900-b979-11eb-8247-f3176f10493f.png)
+
+
 
 ## Installation
 
