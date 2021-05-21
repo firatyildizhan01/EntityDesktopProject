@@ -322,11 +322,11 @@ namespace EntityDesktopProject
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(51, 21);
+            this.label9.Location = new System.Drawing.Point(27, 21);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(41, 13);
+            this.label9.Size = new System.Drawing.Size(91, 13);
             this.label9.TabIndex = 0;
-            this.label9.Text = "label1";
+            this.label9.Text = "fiyat/fark oranı";
             // 
             // panel9
             // 
